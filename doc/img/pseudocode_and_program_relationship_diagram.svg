@@ -86,9 +86,9 @@
   <text x="940" y="290" text-anchor="middle" font-size="19" fill="#A3FF6B">邏輯描述</text>
 
   <!-- 箭頭 4: LeetCode Issue -> Program（約束條件） -->
-  <path d="M280,32 C600,-40 950,-20 1160,253" fill="none"
+  <path d="M290,35 C650,15 950,15 1160,255" fill="none"
         stroke="#4DD9FF" stroke-width="4" marker-end="url(#arrow_cyan)"/>
-  <text x="700" y="30" text-anchor="middle" font-size="19" fill="#4DD9FF">約束條件</text>
+  <text x="700" y="35" text-anchor="middle" font-size="19" fill="#4DD9FF">約束條件</text>
 
   <!-- 箭頭 5: Coding Guideline -> Program（約束條件） -->
   <path d="M1230,478 C1235,440 1225,400 1215,367" fill="none"
