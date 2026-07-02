@@ -57,7 +57,7 @@ $ARGUMENTS
 
 ### 3. 載入問題
 
-+ 搜尋 `topic` 目錄中，符合 {{LEETCODE_PROBLEMS}} 名稱的檔案 LEETCODE_FILENAME。
++ 搜尋 `issue` 目錄中，符合 {{LEETCODE_PROBLEMS}} 名稱的檔案 LEETCODE_FILENAME。
   - {{LEETCODE_PROBLEMS}} 若為數字，以 4 碼數字編號 ( 若不足 4 碼請補 0 湊足 ) 搜尋
   - 若搜尋不到符合的檔案 -> 停止進程 -> 列印 `⛔ 問題 {{LEETCODE_PROBLEMS}} 檔案尚未建立。`
   - LEETCODE_FILENAME 不包括附檔名。

@@ -55,7 +55,7 @@ $ARGUMENTS
 
 ### 3. 輸出題目
 
-+ 將完成的題目內容寫回 `topic/{{PROBLEMS_NUM}}_{{PROBLEMS_NAME}}.md`。
++ 將完成的題目內容寫回 `issue/{{PROBLEMS_NUM}}_{{PROBLEMS_NAME}}.md`。
   - 若檔案不存在，建立新檔案。
   - 若檔案存在，覆蓋原本內容。
 + 輸出內容請嚴格遵守以下規範：
