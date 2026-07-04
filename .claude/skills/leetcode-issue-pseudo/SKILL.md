@@ -56,7 +56,7 @@ $ARGUMENTS
   - {{LEETCODE_PROBLEMS}} 若為數字，以 4 碼數字編號 ( 若不足 4 碼請補 0 湊足 ) 搜尋
   - 若搜尋不到符合的檔案 -> 停止進程 -> 列印 `⛔ {{LEETCODE_PROBLEMS}} 問題檔案尚未建立。`
   - LEETCODE_FILENAME 不包括附檔名。
-+ 程式設計需求 : `topic/{{LEETCODE_FILENAME}}.md`
++ 程式設計需求 : `issue/{{LEETCODE_FILENAME}}.md`
 
 ---
 
