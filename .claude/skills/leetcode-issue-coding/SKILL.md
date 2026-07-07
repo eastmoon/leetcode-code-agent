@@ -50,7 +50,7 @@ $ARGUMENTS
 + GUIDELINE_FILENAME : `{{LANG_NAME}}.md`
   - 檔案名稱若有空白用 `_` 替代
   - 檔案名稱為全小寫
-+ 程式語言指南 : `.codekit/memory/guideline/{{LANG_NAME}}.md`
++ 程式語言指南 : `.codekit/memory/coding-guideline/{{GUIDELINE_FILENAME}}.md`
   - 若程式語言指南檔案不存在 -> 停止進程 -> 列印 `⛔ {{LANG_NAME}} 程式語言指南檔案尚未建立。`
 
 ---
@@ -84,6 +84,7 @@ $ARGUMENTS
   - 檔案名稱為 `main`。
   - 附檔名依據 **{{LANG_NAME}}** 變更，例如 JavaScript 使用 `.js`，Python 使用 `.py`。
   - 檔案完整名稱為 CODE_FILENAME
++ **注意** 無需執行程式碼編譯
 
 ---
 
@@ -100,8 +101,10 @@ $ARGUMENTS
   - 檔案名稱為 `test`。
   - 附檔名依據 **{{LANG_NAME}}** 變更，例如 JavaScript 使用 `.js`，Python 使用 `.py`。
   - 檔案完整名稱為 TEST_FILENAME
++ **注意** 無需執行程式碼編譯
 
 ---
+
 ### 6. 總結
 
 + 輸出 `✅ 執行完畢`

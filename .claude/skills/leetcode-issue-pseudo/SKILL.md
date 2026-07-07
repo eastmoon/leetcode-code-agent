@@ -46,7 +46,7 @@ $ARGUMENTS
 
 ### 2. 載入指引
 
-+ 虛擬碼憲章：`.codekit/memory/constitution/pseudocode.md`
++ 虛擬碼憲章：`.codekit/memory/constitution/coding-pseudocode.md`
 
 ---
 

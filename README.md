@@ -21,14 +21,15 @@
 ## 技能
 
 + 憲章
-  - ```/codekit-design-constitution```，軟體開發憲章，提供軟體開發的設計原則。
-  - ```/codekit-guideline-constitution```，程式指南憲章，提供程式語言的撰寫原則。
-  - ```/codekit-pseudocode-constitution```，虛擬碼設計憲章，提供虛擬碼的撰寫原則。
+  - ```/codekit-software-design-constitution```，軟體開發憲章，提供軟體開發的設計原則。
+  - ```/codekit-coding-pseudocode-constitution```，虛擬碼設計憲章，提供虛擬碼的撰寫原則。
+  - ```/codekit-coding-guideline-constitution```，程式指南憲章，提供程式語言的撰寫原則。
 + 指南
-  - ```/codekit-guideline C++```，生成 C++ 程式語言的設計指南。
-  - ```/codekit-guideline C#```，生成 C++ 程式語言的設計指南。
-  - ```/codekit-guideline JavaScript```，生成 C++ 程式語言的設計指南。
-  - ```/codekit-guideline Python```，生成 C++ 程式語言的設計指南。
+  - ```/codekit-coding-guideline C++```，生成 C++ 程式語言的設計指南。
+  - ```/codekit-coding-guideline C#```，生成 C++ 程式語言的設計指南。
+  - ```/codekit-coding-guideline JavaScript```，生成 C++ 程式語言的設計指南。
+  - ```/codekit-coding-guideline Python```，生成 C++ 程式語言的設計指南。
+  - ```/codekit-coding-guideline Rails```，生成 Ruby on Rails 程式語言的設計指南。
 + LeetCode 操作
   - ```/leetcode-issue-generate 1```，取得 LeetCode 編號 1 題目。
   - ```/leetcode-issue-generate Two-Sum```，取得 LeetCode 名稱為 Two-Sum 題目。

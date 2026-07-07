@@ -1,5 +1,5 @@
 ---
-name: "codekit-guideline"
+name: "codekit-coding-guideline"
 description: 程式碼工具，用於生成特定程式碼設計指南，提供後續評估、分析、審查標準
 user-invocable: true
 disable-model-invocation: false
@@ -50,8 +50,10 @@ $ARGUMENTS
 + GUIDELINE_FILENAME : `{{LANG_NAME}}.md`
   - 檔案名稱若有空白用 `_` 替代
   - 檔案名稱為全小寫
-+ 若 `.codekit/memory/guideline/{{GUIDELINE_FILENAME}}` 不存在，從 `.codekit/templates/guideline-template.md` 複製範本至 `.codekit/memory/guideline/{{GUIDELINE_FILENAME}}`。
-+ 讀取指南檔案 `.codekit/memory/guideline/{{GUIDELINE_FILENAME}}`
++ CODING_GUIDELINE_PATH : `.codekit/memory/coding-guideline/{{GUIDELINE_FILENAME}}`
++ CODINE_GUIDELINE_TEMPLATE_PATH : `.codekit/templates/coding-guideline-template.md`
++ 若 `{{CODING_GUIDELINE_PATH}}` 不存在，從 `{{CODINE_GUIDELINE_TEMPLATE_PATH}}` 複製範本至 `{{CODING_GUIDELINE_PATH}}`。
++ 讀取指南檔案 `{{CODING_GUIDELINE_PATH}}`
   - 辨識所有形如 `[ALL_CAPS_IDENTIFIER]` 的預留符標記。
   - **重要提示**：使用者可能需要比範本中使用的章節數量更少或更多的章節。請遵循實際的章節數量更新文檔。
 
@@ -59,8 +61,8 @@ $ARGUMENTS
 
 ### 3. 載入指引
 
-+ 程式設計憲章 : `.codekit/memory/constitution/design.md`
-+ 程式指南憲章 : `.codekit/memory/constitution/guideline.md`
++ 程式設計憲章 : `.codekit/memory/constitution/software-design.md`
++ 程式指南憲章 : `.codekit/memory/constitution/coding-guideline.md`
   - 若程式指南憲章檔案不存在 -> 停止進程 -> 列印 `⛔ 程式指南憲章尚未建立。`
 
 ---
@@ -102,7 +104,7 @@ $ARGUMENTS
 
 ### 7. 輸出指南
 
-+ 將完成的指南寫回 `.codekit/memory/guideline/{{GUIDELINE_FILENAME}}`，覆蓋原本內容。
++ 將完成的指南寫回 `{{CODING_GUIDELINE_PATH}}`，覆蓋原本內容。
 
 ---
 
