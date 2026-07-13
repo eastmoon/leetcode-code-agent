@@ -1,5 +1,5 @@
 ---
-name: "leetcode-issue-pseudo"
+name: "leetcode-coding-pseudo"
 description: 問題集虛擬碼生成，基於 LeetCode 生成虛擬碼
 user-invocable: true
 disable-model-invocation: false
@@ -52,17 +52,16 @@ $ARGUMENTS
 
 ### 3. 載入問題
 
-+ 搜尋 `issue` 目錄中，符合 {{LEETCODE_PROBLEMS}} 名稱的檔案 LEETCODE_FILENAME。
++ 搜尋 `topic` 目錄中，符合 {{LEETCODE_PROBLEMS}} 名稱的目錄 LEETCODE_NAME。
   - {{LEETCODE_PROBLEMS}} 若為數字，以 4 碼數字編號 ( 若不足 4 碼請補 0 湊足 ) 搜尋
   - 若搜尋不到符合的檔案 -> 停止進程 -> 列印 `⛔ {{LEETCODE_PROBLEMS}} 問題檔案尚未建立。`
-  - LEETCODE_FILENAME 不包括附檔名。
-+ 程式設計需求 : `issue/{{LEETCODE_FILENAME}}.md`
++ 程式設計需求 : `topic/{{LEETCODE_NAME}}/readme.md`
 
 ---
 
 ### 4. 建立程式目錄
 
-+ 若 `app/{{LEETCODE_FILENAME}}` 目錄不存在，建立目錄。
++ 若 `app/{{LEETCODE_NAME}}` 目錄不存在，建立目錄。
 
 ---
 
@@ -71,7 +70,7 @@ $ARGUMENTS
 + 基於 **程式設計需求** 為設計題目。
 + 遵守 **虛擬碼憲章** 指引的撰寫風格。
 + 設計並撰寫虛擬碼。
-+ 匯出虛擬碼內容 -> `app/{{LEETCODE_FILENAME}}/pseudo.md`。
++ 匯出虛擬碼內容 -> `app/{{LEETCODE_NAME}}/pseudo.md`。
 
 ---
 

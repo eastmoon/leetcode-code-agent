@@ -1,5 +1,5 @@
 ---
-name: "leetcode-issue-coding"
+name: "leetcode-coding"
 description: 問題集程式碼生成，基於 LeetCode 與指定程式語言，生成程式碼
 user-invocable: true
 disable-model-invocation: false
@@ -57,13 +57,12 @@ $ARGUMENTS
 
 ### 3. 載入問題
 
-+ 搜尋 `issue` 目錄中，符合 {{LEETCODE_PROBLEMS}} 名稱的檔案 LEETCODE_FILENAME。
++ 搜尋 `topic` 目錄中，符合 {{LEETCODE_PROBLEMS}} 名稱的目錄 LEETCODE_NAME。
   - {{LEETCODE_PROBLEMS}} 若為數字，以 4 碼數字編號 ( 若不足 4 碼請補 0 湊足 ) 搜尋
-  - 若搜尋不到符合的檔案 -> 停止進程 -> 列印 `⛔ 問題 {{LEETCODE_PROBLEMS}} 檔案尚未建立。`
-  - LEETCODE_FILENAME 不包括附檔名。
-+ 程式設計需求 : `issue/{{LEETCODE_FILENAME}}.md`
-+ 程式虛擬碼：`app/{{LEETCODE_FILENAME}}/pseudo.md`
-  - 若程式虛擬碼檔案不存在 -> 停止進程 -> 列印 `⛔ {{LEETCODE_FILENAME}} 問題的虛擬碼尚未建立。`
+  - 若搜尋不到符合的檔案 -> 停止進程 -> 列印 `⛔ {{LEETCODE_PROBLEMS}} 問題檔案尚未建立。`
++ 程式設計需求 : `topic/{{LEETCODE_NAME}}/readme.md`
++ 程式虛擬碼：`app/{{LEETCODE_NAME}}/pseudo.md`
+  - 若程式虛擬碼檔案不存在 -> 停止進程 -> 列印 `⛔ {{LEETCODE_NAME}} 問題的虛擬碼尚未建立。`
 
 ---
 
@@ -80,7 +79,7 @@ $ARGUMENTS
   - 無需實例 **程式設計需求** 內的 **範例** 做驗證。
   - 添加註解說明程式碼，符合 **程式設計需求** 的段落。
   - 添加註解說明程式碼，符合 **程式虛擬碼** 的邏輯實例。
-+ 匯出程式碼內容至 `app/{{LEETCODE_FILENAME}}` 目錄。
++ 匯出程式碼內容至 `app/{{LEETCODE_NAME}}` 目錄。
   - 檔案名稱為 `main`。
   - 附檔名依據 **{{LANG_NAME}}** 變更，例如 JavaScript 使用 `.js`，Python 使用 `.py`。
   - 檔案完整名稱為 CODE_FILENAME
@@ -97,7 +96,7 @@ $ARGUMENTS
   - 添加註解說明程式碼，符合 **程式設計需求** 的段落。
   - 測試程式，需引入程式碼檔案 {{CODE_FILENAME}}。
   - 測試程式，撰寫於進入點函數、段落中，例如 Python 的 ```if __name__ == "__main__":``` 區段內。
-+ 匯出測試碼內容至 `app/{{LEETCODE_FILENAME}}` 目錄。
++ 匯出測試碼內容至 `app/{{LEETCODE_NAME}}` 目錄。
   - 檔案名稱為 `test`。
   - 附檔名依據 **{{LANG_NAME}}** 變更，例如 JavaScript 使用 `.js`，Python 使用 `.py`。
   - 檔案完整名稱為 TEST_FILENAME

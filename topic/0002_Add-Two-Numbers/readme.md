@@ -9,6 +9,7 @@ You may assume the two numbers do not contain any leading zero, except the numbe
 ## 範例
 
 **Example 1:**
+
 ```
 Input: l1 = [2,4,3], l2 = [5,6,4]
 Output: [7,0,8]
@@ -16,12 +17,14 @@ Explanation: 342 + 465 = 807.
 ```
 
 **Example 2:**
+
 ```
 Input: l1 = [0], l2 = [0]
 Output: [0]
 ```
 
 **Example 3:**
+
 ```
 Input: l1 = [9,9,9,9,9,9,9], l2 = [9,9,9,9]
 Output: [8,9,9,9,0,0,0,1]
@@ -35,6 +38,4 @@ Output: [8,9,9,9,0,0,0,1]
 
 ## 註釋
 
-- 數字以反序儲存於鏈結串列中（個位數在串列頭部）。
-- 回傳結果同樣須以反序鏈結串列表示。
-- 兩個鏈結串列的長度可以不相等，需處理進位（carry）至結果串列末端的情況。
+資訊不足

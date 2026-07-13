@@ -31,10 +31,10 @@
   - ```/codekit-coding-guideline Python```，生成 C++ 程式語言的設計指南。
   - ```/codekit-coding-guideline Rails```，生成 Ruby on Rails 程式語言的設計指南。
 + LeetCode 操作
-  - ```/leetcode-issue-generate 1```，取得 LeetCode 編號 1 題目。
-  - ```/leetcode-issue-generate Two-Sum```，取得 LeetCode 名稱為 Two-Sum 題目。
-  - ```/leetcode-issue-pseudo 1```，生成編號 1 題目的 PseudoCode。
-  - ```/leetcode-issue-coding 使用 C++ 撰寫問題編號 1```，基於描述生成程式碼。
+  - ```/leetcode-generate 1```，取得 LeetCode 編號 1 題目。
+  - ```/leetcode-generate Two-Sum```，取得 LeetCode 名稱為 Two-Sum 題目。
+  - ```/leetcode-pseudo 1```，生成編號 1 題目的 PseudoCode。
+  - ```/leetcode-coding 使用 C++ 撰寫問題編號 1```，基於描述生成程式碼。
 
 ## 原理
 

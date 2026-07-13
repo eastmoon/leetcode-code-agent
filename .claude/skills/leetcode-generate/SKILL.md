@@ -1,5 +1,5 @@
 ---
-name: "leetcode-issue-generate"
+name: "leetcode-generate"
 description: 問題集生成，基於 LeetCode 生成用於程式碼生成的原始題目，提供後續生成虛擬碼、程式碼的基礎
 user-invocable: true
 disable-model-invocation: false
@@ -55,30 +55,12 @@ $ARGUMENTS
 
 ### 3. 輸出題目
 
-+ 將完成的題目內容寫回 `issue/{{PROBLEMS_NUM}}_{{PROBLEMS_NAME}}.md`。
-  - 若檔案不存在，建立新檔案。
-  - 若檔案存在，覆蓋原本內容。
-+ 輸出內容請嚴格遵守以下規範：
-
-```markdown
-# {{PROBLEMS_NAME}}
-
-## 摘要
-
-{{PROBLEMS_DESC}}
-
-## 範例
-
-{{PROBLEMS_EXAM}}
-
-## 約束
-
-{{PROBLEMS_CONST}}
-
-## 註釋
-
-{{PROBLEMS_NOTES}}
-```
++ LEETCODE_FILE = `topic/{{PROBLEMS_NUM}}_{{PROBLEMS_NAME}}/readme.md`
++ LEETCODE_FILE_TEMPLATE : `.codekit/templates/leetcode-topic-template.md`
++ 若 `{{LEETCODE_FILE}}` 不存在，從 `{{LEETCODE_FILE_TEMPLATE}}` 複製範本至 `{{LEETCODE_FILE}}`。
++ 讀取題目檔案 `{{LEETCODE_FILE}}`
+  - 辨識所有標記與符號，並將所有標記與符號更換為具體文字。
++ 將完成的題目檔案寫回 `{{LEETCODE_FILE}}`，覆蓋原本內容。
 
 ---
 
