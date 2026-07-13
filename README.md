@@ -24,17 +24,24 @@
   - ```/codekit-software-design-constitution```，軟體開發憲章，提供軟體開發的設計原則。
   - ```/codekit-coding-pseudocode-constitution```，虛擬碼設計憲章，提供虛擬碼的撰寫原則。
   - ```/codekit-coding-guideline-constitution```，程式指南憲章，提供程式語言的撰寫原則。
-+ 指南
-  - ```/codekit-coding-guideline C++```，生成 C++ 程式語言的設計指南。
-  - ```/codekit-coding-guideline C#```，生成 C++ 程式語言的設計指南。
-  - ```/codekit-coding-guideline JavaScript```，生成 C++ 程式語言的設計指南。
-  - ```/codekit-coding-guideline Python```，生成 C++ 程式語言的設計指南。
-  - ```/codekit-coding-guideline Rails```，生成 Ruby on Rails 程式語言的設計指南。
+  - ```/codekit-code-summarization-constitution```，程式指南憲章，提供程式語言的撰寫原則。
++ 編碼指南
+  - ```/codekit-coding-guideline C++```，生成 C++ 程式語言的編碼指南。
+  - ```/codekit-coding-guideline C#```，生成 C++ 程式語言的編碼指南。
+  - ```/codekit-coding-guideline JavaScript```，生成 C++ 程式語言的編碼指南。
+  - ```/codekit-coding-guideline Python```，生成 C++ 程式語言的編碼指南。
+  - ```/codekit-coding-guideline Rails```，生成 Ruby on Rails 程式語言的編碼指南。
 + LeetCode 操作
   - ```/leetcode-generate 1```，取得 LeetCode 編號 1 題目。
   - ```/leetcode-generate Two-Sum```，取得 LeetCode 名稱為 Two-Sum 題目。
   - ```/leetcode-pseudo 1```，生成編號 1 題目的 PseudoCode。
   - ```/leetcode-coding 使用 C++ 撰寫問題編號 1```，基於描述生成程式碼。
++ 摘要指南
+  - ```/codekit-code-summarization-guideline C++```，生成 C++ 程式語言的程式摘要指南。
+  - ```/codekit-code-summarization-guideline C#```，生成 C# 程式語言的程式摘要指南。
+  - ```/codekit-code-summarization-guideline JavaScript```，生成 JavaScript 程式語言的程式摘要指南。
+  - ```/codekit-code-summarization-guideline Python```，生成 Python 程式語言的程式摘要指南。
+  - ```/codekit-code-summarization-guideline Rails```，生成 Python 程式語言的程式摘要指南。
 
 ## 原理
 
