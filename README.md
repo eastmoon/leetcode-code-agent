@@ -44,7 +44,6 @@
   - ```/codekit-code-summarization-guideline Rails```，生成 Ruby on Rails 程式語言的程式摘要指南。
 + 不嚴謹程式碼
   - ```/badcode-coding 使用 C++ 撰寫問題編號 1```，基於描述生成不嚴謹程式碼。
-
   - ```/badcode-summarization 摘要編號 1 問題的 C++ 程式碼```，基於描述對嚴謹程式碼進行程式摘要。
   - ```/badcode-topic-diff 1```，比對編號 1 問題的需求文件與摘要文件內容差異。
 
